@@ -87,6 +87,7 @@ class WeatherViewController: UIViewController {
                 self?.weatherService.getWeather(city: main.name) { [weak self] weather in
                     switch weather {
                     case .success(let city):
+                        guard city.id != 0 else { return }
                         self?.database.deleteWeatherCity()
                         self?.database.addWeather(weather: city, main: main)
                         self?.getWeatherFromDatabase()
@@ -95,7 +96,7 @@ class WeatherViewController: UIViewController {
                     }
                 }
             case .failure( _):
-                let alert = UIAlertController(title: "Error", message: "Sorry, our server is currently not available or the city is not entered correctly. Try again in a few minutes.", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Error", message: "Sorry, our server is currently not available. Try again in a few minutes.", preferredStyle: .alert)
                 let action = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
                 alert.addAction(action)
                 self?.present(alert, animated: true, completion: nil)
