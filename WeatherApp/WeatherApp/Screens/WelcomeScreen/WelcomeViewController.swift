@@ -60,12 +60,15 @@ class WelcomeViewController: UIViewController {
     }
     
     func setupTitle() {
-        titleWeather.topAnchor.constraint(equalTo: iconWeather.bottomAnchor, constant: 20).isActive = true
+       titleWeather.topAnchor.constraint(equalTo: iconWeather.bottomAnchor, constant: 20).isActive = true
         titleWeather.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 80).isActive = true
         titleWeather.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -80).isActive = true
         titleWeather.heightAnchor.constraint(equalToConstant: 50).isActive = true
         titleWeather.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         titleWeather.textColor = .white
+        titleWeather.shadowColor = .darkText
+        titleWeather.shadowOffset.height = 2
+        titleWeather.shadowOffset.width = 2
         titleWeather.textAlignment = .center
         titleWeather.font = UIFont.boldSystemFont(ofSize: 30)
         titleWeather.text = "Weather"
@@ -75,13 +78,12 @@ class WelcomeViewController: UIViewController {
         cityTextField.topAnchor.constraint(equalTo: titleWeather.bottomAnchor, constant: 30).isActive = true
         cityTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         cityTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
-        cityTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        cityTextField.backgroundColor = .white
+        cityTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        cityTextField.backgroundColor = .clear
         cityTextField.textColor = .darkGray
-        cityTextField.layer.cornerRadius = 5
-        cityTextField.clipsToBounds = true
-        cityTextField.attributedPlaceholder = .init(string: "Your name city")
-        cityTextField.tintColor = .white
+        cityTextField.attributedPlaceholder = .init(string: "City name")
+        cityTextField.font = UIFont(descriptor: UIFontDescriptor(name: "", size: 25), size: 25)
+        cityTextField.tintColor = .darkGray
         cityTextField.textAlignment = .center
     }
     
@@ -90,9 +92,11 @@ class WelcomeViewController: UIViewController {
         nextViewButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 170).isActive = true
         nextViewButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -170).isActive = true
         nextViewButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        nextViewButton.backgroundColor = .white
+        nextViewButton.backgroundColor = .clear
         nextViewButton.setTitle("Show", for: .normal)
-        nextViewButton.setTitleColor(.darkGray, for: .normal)
+        nextViewButton.setTitleColor(.white, for: .normal)
+        nextViewButton.layer.borderWidth = 1
+        nextViewButton.layer.borderColor = UIColor.lightGray.cgColor
         nextViewButton.layer.cornerRadius = 10
         nextViewButton.addTarget(self, action: #selector(getNewScreen(_:)), for: .touchUpInside)
         nextViewButton.clipsToBounds = true

@@ -24,7 +24,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                         <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <size key="shadowOffset" width="0.0" height="2"/>
+                        <size key="shadowOffset" width="2" height="2"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnE-4g-i3L">
                         <rect key="frame" x="15" y="85" width="384" height="40"/>
@@ -35,7 +35,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                         <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <size key="shadowOffset" width="0.0" height="2"/>
+                        <size key="shadowOffset" width="2" height="2"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wux-BU-BZ9">
                         <rect key="frame" x="299" y="155" width="100" height="100"/>
@@ -54,7 +54,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                         <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <size key="shadowOffset" width="0.0" height="2"/>
+                        <size key="shadowOffset" width="2" height="2"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeekDay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOv-IV-qvQ">
                         <rect key="frame" x="10" y="265" width="389" height="35"/>
@@ -65,7 +65,7 @@
                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                         <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <size key="shadowOffset" width="0.0" height="2"/>
+                        <size key="shadowOffset" width="2" height="2"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -91,8 +91,8 @@ class WeatherViewController: UIViewController {
                         self?.database.deleteWeatherCity()
                         self?.database.addWeather(weather: city, main: main)
                         self?.getWeatherFromDatabase()
-                    case .failure( _):
-                        print("What is going???? o_O")
+                    case .failure(let error):
+                        print("What is going???? o_O" + error.localizedDescription)
                     }
                 }
             case .failure( _):
