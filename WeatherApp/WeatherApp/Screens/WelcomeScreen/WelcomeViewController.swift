@@ -82,7 +82,7 @@ class WelcomeViewController: UIViewController {
         cityTextField.backgroundColor = .clear
         cityTextField.textColor = .darkGray
         cityTextField.attributedPlaceholder = .init(string: "City name")
-        cityTextField.font = UIFont(descriptor: UIFontDescriptor(name: "", size: 25), size: 25)
+        cityTextField.font = UIFont.boldSystemFont(ofSize: 25)
         cityTextField.tintColor = .darkGray
         cityTextField.textAlignment = .center
     }
